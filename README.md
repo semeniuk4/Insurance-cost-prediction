@@ -2,7 +2,7 @@
 Health Insurance Cost Prediction using Machine Learning and Data Science methods
 #### -- Project Status: [Completed]
 
-## Project Intro/Objective
+## Project Description
 The purpose of this project is predict the charge of insurance. 
 
 ### Technologies
