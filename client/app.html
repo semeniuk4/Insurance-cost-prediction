@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Banglore Home Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<form class="form">
+	<h2>Weight (kg)</h2>
+    <input class="area"  type="text" id="uiWeight" class="floatLabel" name="Weight" value="80">
+	<h2>Height (cm)</h2>
+    <input class="area"  type="text" id="uiHeight" class="floatLabel" name="Height" value="180">
+</form>
+<form class="form">
+	<h2>Age</h2>
+    <input class="area"  type="text" id="Age" class="floatLabel" name="age_" value="20">
+	<h2>Children</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-bhk-0" name="Children" value="0"/>
+		<label for="radio-bhk-0">0</label>
+		<input type="radio" id="radio-bhk-1" name="Children" value="1"/>
+		<label for="radio-bhk-1">1</label>
+		<input type="radio" id="radio-bhk-2" name="Children" value="2" checked/>
+		<label for="radio-bhk-2">2</label>
+		<input type="radio" id="radio-bhk-3" name="Children" value="3"/>
+		<label for="radio-bhk-3">3</label>
+		<input type="radio" id="radio-bhk-4" name="Children" value="4"/>
+		<label for="radio-bhk-4">4</label>
+	</div>
+</form>
+
+<form class="form">
+	<h2>Smoker?</h2>
+	<div class="switch-field">
+		<input type="radio" id="smoker-no" name="smoker" value="0"/>
+		<label for="smoker-no">No</label>
+		<input type="radio" id="smoker-yes" name="smoker" value="1" checked/>
+		<label for="smoker-yes">Yes</label>
+	</div>
+</form>
+<form class="form">
+	<h2>Sex</h2>
+	<div class="switch-field">
+		<input type="radio" id="male" name="sex" value="1"/>
+		<label for="male">Male</label>
+		<input type="radio" id="female" name="sex" value="0" checked/>
+		<label for="female">Female</label>
+	</div>
+	<button class="submit" onclick="onClickedEstimateCharge()" type="button">Estimate Charge</button>
+	<div id="EstimateCharge" class="result">	<h2></h2> </div>
+</form>
+</body>
+</html>
